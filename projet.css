@@ -1,0 +1,109 @@
+nav.menu{
+    padding: 30px;
+    border-radius: 5px;
+}
+nav.autre{
+    padding: 5px;
+    border-radius: 5px;
+}
+
+h1.titre, h2.titre2
+{
+    text-align: center;
+    opacity: 1;
+
+}
+footer {
+    color: ##E6E6E6;
+    background-color: #323232;
+    border-radius: 5px;
+    padding: 10px;
+    opacity: 0.90;
+    bottom: 0;
+    font-size: 15px;
+}
+h4{
+    text-align: center;
+}
+body {
+    color: #E6E6E6;
+    background-image: url(./rose.jpg); 
+    background-attachment: fixed;
+    font-family: 'Roboto' , sans-serif;
+    flex: auto;
+    font-size: 18px;
+}
+p{
+    text-align: justify;
+}
+a:link{
+    text-decoration: none;
+} 
+li.item:hover{
+    background-color: purple;
+    border-radius: 5px;
+}
+li.cv{
+    text-align: center;
+    float: none;
+}
+
+ul.onglet{
+     position:fixed;
+     left: 0;
+     top: 10px;
+     bottom: 160px;
+     background-color: #323232;
+     opacity: 0.90;
+     border-radius: 5px;
+     }
+ul.reseau{
+    position:fixed;
+    right: 0;
+    top: 70px;
+    bottom: 460px;
+    background-color: #323232;
+    opacity: 0.80;
+    border-radius: 5px;
+}
+
+li {
+    margin-right: 30px;
+    margin-bottom: 0px;
+    padding: 0px;
+    margin-top: 40px;
+    list-style-type: none; 
+
+}
+li.item{
+    padding: 3px;
+    font-size: 16px;
+     margin-top: 60px;
+     top: 40px;
+}
+a{
+    text-decoration: none;
+    color: #E6E6E6;
+}
+img.photo{
+    height: 90px;
+    width: 90px;
+    border-radius: 5px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+input.barre{
+    width: 350px;
+    display: block;
+}
+progress{
+
+  border-radius: 3px;
+  
+}
+
+@media screen and (max-width: 700px){
+p{
+    font-size:15px;
+}
+}
