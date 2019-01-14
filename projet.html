@@ -23,7 +23,7 @@
     <li><img src="./res/pictures/moi2.jpg" class="photo" alt="" /></li>
     <li class="item"><a href="./index.html"> <i class="fas fa-home fa-2x"></i> Parcours</a></li>
     <li class="item"><a href="./competence.html"> <i class="fas fa-tasks fa-2x"></i> Compétences </a></li>
-    <li class="item"><a href="./projet.html"> <i class="fas fa-project-diagram fa-2x"></i> Mes projets</a></li>
+    <li class="item ici"><a href="./projet.html"> <i class="fas fa-project-diagram fa-2x"></i> Mes projets</a></li>
     <li class="item"><a href="./cv.html"> <i class="far fa-file fa-2x"></i> CV</a></li>
     <li class="item"><a href="./contact.html"> <i class="far fa-envelope fa-2x"></i> Contact</a></li>
   </ul>
@@ -51,93 +51,77 @@
 
   <div class="margin-100">
     <h1 id="projet">Mes projets</h1>
-    <p>Pour décembre nous avons dû, en binôme créer un Memory dans le cadre de l'école. Pour cela nous avons eu un délai de 1 mois. 
+    <p>Pour décembre nous avons, en binôme créer un Memory dans le cadre de l'école. Pour cela nous avons eu un délai de 1 mois. 
       <br>
       Afin de réaliser le projet plusieurs contraintes ont été posée; un timer devait apparaitre, plusieurs modes de difficultés devaient être créé et un mode triche a été mis en place. L'utilisation de Makefile était également obligatoire. 
       <br>
       Nous avons créé notre propre graphique, avec les différents fonds, les cartes ainsi que les boutons avec photoshop.
     </p> <p>
-    Notre programme se présente en un menu principal avec les différents mode de difficulté et un bouton menant aux règles du jeu<br>
-  </p> <p>
-  Chaque fenêtre de jeu se présente de la même manière; on trouve le timer en haut à gauche, les cartes en fonction de la difficulté (par exemple la grille normale est de 5x6 ), ensuite à droite on indique les différents boutons, q pour quitter et t pour le mode triche. <br>
-</p> 
-<p>
-  une fois toutes les cartes trouvées, le jeu s'arrête et ouvre un nouveau fond qui est l'écran de victoire, avec un bouton qui mène au menu principal. <br>
-</p>
-<p>Nous avons dû utiliser la bibliothèque graphique de l'IUT. Ainsi par exemple, pour créer la grille de jeu, il a fallu stocker les sprites des cartes dans un tableau en 1 exemplaire afin de récupérer l'id donné par la fonction ChargerSprite et de reconnaitre par la suite les cartes.</p>
-<p>On créé ensuite un second tableau afin de mettre en 2 exemplaires, à des places aléatoires chaque chaque et les placer sur la grille</p>
-<p>Il faut que l'utilisateur clique deux fois, sur deux cartes différentes afin de comparer leur id, si les id sont pareils, les cartes restent retournées et le score d'incrémente, sinon ils sont recachés. <br>
-  Le score permet de déterminer si je le jeu est fini ou non, le score dépend alors du nombre de paire présente dans la grille. Le score s'incrémente à chaque paire trouvée jusqu'à atteindre le nombre maximum. Le jeu sera alors fini et l'écran de victoire apparaît.</p>
+      Notre programme se présente en un menu principal avec les différents mode de difficulté et un bouton menant aux règles du jeu<br>
+    </p> <p>
+      Chaque fenêtre de jeu se présente de la même manière; on trouve le timer en haut à gauche, les cartes en fonction de la difficulté (par exemple la grille normale est de 5x6 ), ensuite à droite on indique les différents boutons, q pour quitter et t pour le mode triche. <br>
+    </p> 
+    <p>
+      une fois toutes les cartes trouvées, le jeu s'arrête et ouvre un nouveau fond qui est l'écran de victoire, avec un bouton qui mène au menu principal. <br>
+    </p>
+    <p>Nous avons dû utiliser la bibliothèque graphique de l'IUT. Ainsi par exemple, pour créer la grille de jeu, il a fallu stocker les sprites des cartes dans un tableau en 1 exemplaire afin de récupérer l'id donné par la fonction ChargerSprite et de reconnaitre par la suite les cartes.</p>
+    <p>On créé ensuite un second tableau afin de mettre en 2 exemplaires, à des places aléatoires chaque chaque et les placer sur la grille</p>
+    <p>Il faut que l'utilisateur clique deux fois, sur deux cartes différentes afin de comparer leur id, si les id sont pareils, les cartes restent retournées et le score d'incrémente, sinon ils sont recachés. <br>
+    Le score permet de déterminer si je le jeu est fini ou non, le score dépend alors du nombre de paire présente dans la grille. Le score s'incrémente à chaque paire trouvée jusqu'à atteindre le nombre maximum. Le jeu sera alors fini et l'écran de victoire apparaît.</p>
 
 
-  <div class="cadre">
-    <div class="photos-mini">
-      <div class="miniature">
-        <label for="lightbox-1">
-          <img src="./res/pictures/jeu.png" alt style="height: 70px;
-          width: 200px">
-        </label>
-        <input type="radio" name="demo" checked class="fen" id="lightbox-1" />
-        <img class="fenetre" src="./res/pictures/jeu.png" alt="" >
-        <figcaption>
-          ceci  est le plateau de jeu, c'est sur cette page-ci que le joueur commence la partie
-        </figcaption>
-      </div>
-      <div class="miniature">
-        <label for="lightbox-2">
-          <img class="miniature-size" src="./res/pictures/menu.png" alt="" >
-        </label>
-        <input type="radio" name="demo" class="fen" id="lightbox-2" />
-        <img class="fenetre" src="./res/pictures/menu.png" alt="" >
-        <figcaption>
-          L'apercue du menu principal avec ses différents boutons
-        </figcaption>
-      </div>
-      <div class="miniature">
-        <label for="lightbox-3">
-          <img class="miniature-size" src="./res/pictures/victoire.png" alt="" >
-        </label>
-        <input type="radio" name="demo" class="fen" id="lightbox-3" />
-        <img class="fenetre" src="./res/pictures/victoire.png" alt="">
-        <figcaption>
-          L'écran de victoire après que le joueur ait découvert toutes les cartes
-        </figcaption>
-      </div>
-      <div class="miniature">
-        <label for="lightbox-4">
-          <img class="miniature-size" src="./res/pictures/cheat.png" alt="" >
-        </label>
-        <input type="radio" name="demo" class="fen" id="lightbox-4" />
-        <img class="fenetre" src="./res/pictures/cheat.png" alt="">
-        <figcaption>
-          Plateau de jeu lorsque le mode cheat est utilisé
-        </figcaption>
-      </div>
-      <div class="miniature">
-        <label for="lightbox-5">
-          <img class="miniature-size" src="./res/pictures/regle.png" alt="" >
-        </label>
-        <input type="radio" name="demo" class="fen" id="lightbox-5" />
-        <img class="fenetre" src="./res/pictures/regle.png" alt="" >
-        <figcaption>
-          Fenetre contenant les règles du jeu
-        </figcaption>
+    <div class="cadre">
+      <div class="photos-mini">
+        <div class="miniature">
+          <label for="lightbox-1">
+            <img src="./res/pictures/jeu.png" alt style="height: 70px;
+            width: 200px">
+          </label>
+          <input type="radio" name="demo" checked class="fen" id="lightbox-1" />
+          <img class="fenetre" src="./res/pictures/jeu.png" alt="" >
+        </div>
+        <div class="miniature">
+          <label for="lightbox-2">
+            <img class="miniature-size" src="./res/pictures/menu.png" alt="" >
+          </label>
+          <input type="radio" name="demo" class="fen" id="lightbox-2" />
+          <img class="fenetre" src="./res/pictures/menu.png" alt="" >
+        </div>
+        <div class="miniature">
+          <label for="lightbox-3">
+            <img class="miniature-size" src="./res/pictures/victoire.png" alt="" >
+          </label>
+          <input type="radio" name="demo" class="fen" id="lightbox-3" />
+          <img class="fenetre" src="./res/pictures/victoire.png" alt="">
+        </div>
+        <div class="miniature">
+          <label for="lightbox-4">
+            <img class="miniature-size" src="./res/pictures/cheat.png" alt="" >
+          </label>
+          <input type="radio" name="demo" class="fen" id="lightbox-4" />
+          <img class="fenetre" src="./res/pictures/cheat.png" alt="">
+        </div>
+        <div class="miniature">
+          <label for="lightbox-5">
+            <img class="miniature-size" src="./res/pictures/regle.png" alt="" >
+          </label>
+          <input type="radio" name="demo" class="fen" id="lightbox-5" />
+          <img class="fenetre" src="./res/pictures/regle.png" alt="" >
+        </div>
       </div>
     </div>
-  </div>
-</div>  
+  </div>  
+  <p>
+    Vous pouvez télécharger le compte rendu du projet. 
+  </p>
+  <p> <a href="./res/documents/PROJET_APL_2018-BESNARD.pdf" target="_blank" > <i class="fas fa-arrow-alt-circle-down fa-4x"> </i>  </a> </p>
+</div>
 
-<p>
-  Vous pouvez télécharger le compte rendu du projet. 
-</p>
-<p> <a href="./res/documents/PROJET_APL_2018-BESNARD.pdf" target="_blank" > <i class="fas fa-arrow-alt-circle-down fa-4x"> </i>  </a> </p>
-</div>
-</div>
-</div >
+
 
 <footer class="footer-container">
   <div class="footer">
-    <div class="mention">Anne-Sophie Besnard  -  2018</div>
+    <div class="mention">Anne-Sophie Besnard  -  2019</div>
     <div class="logo"><a href="http://www.iut-fbleau.fr" target="_blank"> <img class="logo-image" src="./res/pictures/logo.jpg" alt=""/></a></div>
   </div>
 </footer> 

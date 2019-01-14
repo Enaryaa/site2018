@@ -45,8 +45,8 @@
 }
 
 .logo-image {
-    height: 50px;
-    width: 90px;
+    height: 70px;
+    width: 120px;
 }   
 h4{
     text-align: center;
@@ -65,10 +65,16 @@ p{
 a:link{
     text-decoration: none;
 } 
-li.item:hover{
+.item:hover{
     background-color: purple;
     border-radius: 5px;
 }
+
+.ici{
+    background-color: purple;
+    border-radius: 5px;
+}
+
 .menu{
     padding: 30px;
     border-radius: 5px;

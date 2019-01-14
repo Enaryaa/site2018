@@ -1,0 +1,9 @@
+.margin-250{
+	font-size:11px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.gotop, .menu, .menu-1024, .autre, .footer-container, .titre2, .titre, h1, .link{
+	display: none;
+}
